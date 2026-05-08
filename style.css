@@ -190,3 +190,17 @@
 .more:hover {
   cursor: pointer;
 }
+
+.bonus-resources {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  max-width: 85%;
+  border-radius: 50px;
+  background-image: url(assets/div_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
