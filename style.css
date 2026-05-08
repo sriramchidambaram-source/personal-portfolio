@@ -13,7 +13,6 @@
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  min-width: 100vw;
 }
 
 .s1, .s2, .s3, .s4, .s5 {
@@ -186,7 +185,6 @@
 .more {
   text-align: center;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0);
   border: none;
   color: white;
   padding: 10px 50px;
@@ -211,6 +209,7 @@
   background-size: cover;
   background-position: center;
   width: 70vmax;
+  margin-bottom: 2%;
 }
 
 .roadmap {
