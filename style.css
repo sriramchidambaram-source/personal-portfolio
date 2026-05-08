@@ -1,0 +1,168 @@
+.main {
+  background-image: url(assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.background {
+  background-color: rgba(0, 0, 0, 0.75);
+  max-width: 85%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  border-radius: 20px;
+}
+
+.s1, .s2, .s3, .s4, .s5 {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.stage1 {
+  background-color: rgba(255, 166, 0, 0.5);
+  border-radius: 5px;
+  border-style: double;
+  margin-bottom: 20px;
+}
+
+.stage2 {
+  background-color: rgba(0, 0, 255, 0.5);
+  border-radius: 5px;
+  border-style: double;
+  margin-bottom: 20px;
+}
+
+.stage3 {
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 5px;
+  border-style: double;
+  margin-bottom: 20px;
+}
+
+.stage4 {
+  background-color: rgba(0, 255, 0, 0.5);
+  border-radius: 5px;
+  border-style: double;
+  margin-bottom: 20px;
+}
+
+.stage5 {
+  background-color: rgba(128, 0, 128, 0.5);
+  border-radius: 5px;
+  border-style: double;
+  margin-bottom: 20px;
+}
+
+.s1-content {
+  background-color: rgba(255, 166, 0, 0.5);
+  border-radius: 5px;
+  min-width: 100px;
+}
+
+.s2-content {
+  background-color: rgba(0, 0, 255, 0.5);
+  border-radius: 5px;
+  min-width: 100px;
+}
+
+.s3-content {
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 5px;
+  min-width: 100px;
+}
+
+.s4-content {
+  background-color: rgba(0, 255, 0, 0.5);
+  border-radius: 5px;
+  min-width: 100px;
+}
+
+.s5-content {
+  background-color: rgba(128, 0, 128, 0.5);
+  border-radius: 5px;
+  min-width: 100px;
+}
+
+.roadmap {
+  color: wheat;
+  text-align: center;
+}
+
+.header {
+  color: white;
+}
+
+.developer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
+  max-width: 85%;
+  border-radius: 50px;
+  background-image: url(assets/div_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.developer-photo {
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.developer-message {
+  max-width: 75%;
+  text-align: left;
+}
+
+#dev-more {
+  max-width: 75%;
+  text-align: left;
+  display: none;
+}
+
+.developer-name {
+  margin-bottom: 2px;
+  white-space: nowrap;
+}
+
+.developer-role {
+  margin-top: 0;
+}
+
+.developer-left {
+  text-align: center;
+  color: red;
+}
+
+.developer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: rgb(202, 0, 0);
+}
+
+.more {
+  text-align: center;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  margin-top: 25px;
+  background-image: url(assets/btn_background.png);
+  background-position: center;
+}
+
+.more:hover {
+  cursor: pointer;
+}
