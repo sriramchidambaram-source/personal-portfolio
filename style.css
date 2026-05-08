@@ -32,59 +32,59 @@
 }
 
 .stage2 {
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 255, 0.25);
   border-radius: 5px;
   border-style: double;
   margin-bottom: 20px;
 }
 
 .stage3 {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.25);
   border-radius: 5px;
   border-style: double;
   margin-bottom: 20px;
 }
 
 .stage4 {
-  background-color: rgba(0, 255, 0, 0.5);
+  background-color: rgba(0, 255, 0, 0.25);
   border-radius: 5px;
   border-style: double;
   margin-bottom: 20px;
 }
 
 .stage5 {
-  background-color: rgba(128, 0, 128, 0.5);
+  background-color: rgba(128, 0, 128, 0.25);
   border-radius: 5px;
   border-style: double;
   margin-bottom: 20px;
 }
 
 .s1-content {
-  background-color: rgba(255, 166, 0, 0.5);
+  background-color: rgba(255, 166, 0, 0.25);
   border-radius: 5px;
   min-width: 100px;
 }
 
 .s2-content {
-  background-color: rgba(0, 0, 255, 0.5);
+  background-color: rgba(0, 0, 255, 0.25);
   border-radius: 5px;
   min-width: 100px;
 }
 
 .s3-content {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.25);
   border-radius: 5px;
   min-width: 100px;
 }
 
 .s4-content {
-  background-color: rgba(0, 255, 0, 0.5);
+  background-color: rgba(0, 255, 0, 0.25);
   border-radius: 5px;
   min-width: 100px;
 }
 
 .s5-content {
-  background-color: rgba(128, 0, 128, 0.5);
+  background-color: rgba(128, 0, 128, 0.25);
   border-radius: 5px;
   min-width: 100px;
 }
