@@ -9,13 +9,12 @@
 }
 
 .background {
-  background-color: rgba(0, 0, 0, 0.75);
-  max-width: 85%;
+  background-color: rgba(0, 0, 0, 0.25);
   display: flex;
   align-items: center;
   flex-direction: column;
   min-height: 100vh;
-  border-radius: 20px;
+  min-width: 100vw;
 }
 
 .s1, .s2, .s3, .s4, .s5 {
@@ -127,6 +126,7 @@
 .header {
   color: white;
   text-align: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .developer-section {
@@ -135,8 +135,7 @@
   align-items: center;
   gap: 40px;
   padding: 40px;
-  max-width: 85%;
-  min-width: 70vmax;
+  width: 70vmax;
   border-radius: 50px;
   background-image: url(assets/div_background.png);
   background-repeat: no-repeat;
@@ -165,10 +164,12 @@
 .developer-name {
   margin-bottom: 2px;
   white-space: nowrap;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .developer-role {
   margin-top: 0;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .developer-left {
@@ -210,7 +211,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-width: 70vmax;
+  width: 70vmax;
 }
 
 .roadmap {
@@ -225,7 +226,7 @@
   background-size: cover;
   background-position: center;
   flex-direction: column;
-  min-width: 70vmax;
+  width: 70vmax;
 }
 
 .resource-link-top {
