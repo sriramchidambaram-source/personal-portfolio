@@ -20,7 +20,7 @@
 
 .s1, .s2, .s3, .s4, .s5 {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   min-width: 50vmax;
 }
 
@@ -60,7 +60,8 @@
 }
 
 .s1-content, .s2-content, .s3-content, .s4-content, .s5-content {
-  padding: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
   margin: 10px;
 }
 
