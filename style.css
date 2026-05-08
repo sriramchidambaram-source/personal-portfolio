@@ -89,6 +89,30 @@
   min-width: 100px;
 }
 
+.stage1:hover, .stage2:hover, .stage3:hover, .stage4:hover, .stage5:hover, .s1-content:hover, .s2-content:hover, .s3-content:hover, .s4-content:hover, .s5-content:hover {
+  cursor: pointer;
+}
+
+.stage1:hover, .s1-content:hover {
+  background-color: rgba(255, 166, 0, 0.75);
+}
+
+.stage2:hover, .s2-content:hover {
+  background-color: rgba(0, 0, 255, 0.75);
+}
+
+.stage3:hover, .s3-content:hover {
+  background-color: rgba(255, 0, 0, 0.75);
+}
+
+.stage4:hover, .s4-content:hover {
+  background-color: rgba(0, 255, 0, 0.75);
+}
+
+.stage5:hover, .s5-content:hover {
+  background-color: rgba(128, 0, 128, 0.75);
+}
+
 .roadmap {
   color: wheat;
   text-align: center;
