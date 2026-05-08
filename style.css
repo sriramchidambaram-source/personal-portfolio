@@ -89,10 +89,6 @@
   min-width: 100px;
 }
 
-.stage1, .stage2, .stage3, .stage4, .stage5, .s1-content, .s2-content, .s3-content, .s4-content, .s5-content {
-  min-width: 150%;
-}
-
 .stage1:hover, .stage2:hover, .stage3:hover, .stage4:hover, .stage5:hover, .s1-content:hover, .s2-content:hover, .s3-content:hover, .s4-content:hover, .s5-content:hover {
   cursor: pointer;
 }
@@ -221,4 +217,5 @@
   background-size: cover;
   background-position: center;
   flex-direction: column;
+  min-width: 80vmax;
 }
