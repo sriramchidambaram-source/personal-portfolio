@@ -21,7 +21,7 @@
 .s1, .s2, .s3, .s4, .s5 {
   display: flex;
   justify-content: space-between;
-  
+  min-width: 50vmax;
 }
 
 .stage1 {
@@ -217,5 +217,5 @@
   background-size: cover;
   background-position: center;
   flex-direction: column;
-  min-width: 80vmax;
+  min-width: 60vmax;
 }
