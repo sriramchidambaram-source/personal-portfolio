@@ -113,13 +113,14 @@
   background-color: rgba(128, 0, 128, 0.75);
 }
 
-.roadmap {
+.roadmap-outer {
   color: wheat;
   text-align: center;
 }
 
 .header {
   color: white;
+  text-align: center;
 }
 
 .developer-section {
@@ -197,7 +198,19 @@
   align-items: center;
   gap: 40px;
   padding: 40px;
-  max-width: 85%;
+  border-radius: 50px;
+  background-image: url(assets/div_background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.roadmap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 40px;
   border-radius: 50px;
   background-image: url(assets/div_background.png);
   background-repeat: no-repeat;
