@@ -1,7 +1,5 @@
 .main {
-  background-image: url(assets/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.75);
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
@@ -197,7 +195,7 @@
   cursor: pointer;
 }
 
-.bonus-resources {
+.resources {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,9 +230,9 @@
   text-decoration: none;
   font-size: 18px;
   background-color: rgba(255, 0, 0, 0.25);
-  padding: 10px 20px;
   border-radius: 5px;
   margin-bottom: 20px;
+  padding: 5px 5px
 }
 
 .resource-link-top:hover {
@@ -253,6 +251,11 @@
   text-decoration: none;
   font-size: 18px;
   background-color: rgba(255, 0, 0, 0.25);
-  padding: 10px 20px;
   border-radius: 5px;
+  padding: 5px 5px
+}
+
+.resource-link-bottom:hover {
+  background-color: rgba(255, 0, 0, 0.75);
+  cursor: pointer;
 }
