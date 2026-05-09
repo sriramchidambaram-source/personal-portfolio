@@ -13,6 +13,12 @@
   min-height: 100vh;
 }
 
+.s1-content-button, .s2-content-button, .s3-content-button, .s4-content-button, .s5-content-button {
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+
 .s1, .s2, .s3, .s4, .s5 {
   display: flex;
   justify-content: space-around;
@@ -57,6 +63,8 @@
 .s1-content, .s2-content, .s3-content, .s4-content, .s5-content {
   padding-left: 5%;
   padding-right: 5%;
+  padding-bottom: 2%;
+  padding-top: 2%;
   margin: 10px;
 }
 
