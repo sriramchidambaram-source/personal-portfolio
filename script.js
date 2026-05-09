@@ -1,3 +1,15 @@
+const toggleBtn = document.getElementById("theme-toggle");
+const currentTheme = localStorage.getItem("theme") || "dark"; 
+
+document.documentElement.setAttribute("data-theme", currentTheme);
+
+toggleBtn.addEventListener("click", () => {
+    const theme = document.documentElement.getAttribute("data-theme");
+    const newTheme = theme === "dark" ? "light" : "dark";
+    document.documentElement.setAttribute("data-theme", newTheme);
+    localStorage.setItem("theme", newTheme); // remember choice
+});
+
 function readMore() {
     let btn = document.getElementById("more");
     let el = document.getElementById("dev-more");

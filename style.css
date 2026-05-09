@@ -1,5 +1,18 @@
+:root {
+  --bg-color: rgba(255, 255, 255, 0.75);
+  --div-bg-color: rgba(0, 0, 0, 0.75);
+  --text-color: rgba(0, 0, 0, 1);
+}
+
+[data-theme="dark"] {
+  --bg-color: rgba(0, 0, 0, 0.75);
+  --div-bg-color: rgba(255, 255, 255, 0.75);
+  --text-color: rgba(0, 0, 0, 1);
+}
+
 .main {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   align-items: center;
@@ -13,10 +26,21 @@
   min-height: 100vh;
 }
 
+#theme-toggle {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 0, 0.25);
+  color: var(--text-color);
+}
+
 .s1-content-button, .s2-content-button, .s3-content-button, .s4-content-button, .s5-content-button {
   border: none;
   background-color: transparent;
-  color: white;
+  color: var(--text-color);
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 2%;
@@ -26,11 +50,12 @@
 
 .s1, .s2, .s3, .s4, .s5 {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   min-width: 50vmax;
 }
 
 .stage1, .stage2, .stage3, .stage4, .stage5 {
+  color: var(--text-color);
   background-color: rgba(255, 166, 0, 0.25);
   border-radius: 5px;
   border-style: double;
@@ -62,12 +87,11 @@
 }
 
 .roadmap-outer {
-  color: wheat;
   text-align: center;
 }
 
 .header {
-  color: white;
+  color: var(--text-color);
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
 }
@@ -80,10 +104,7 @@
   padding: 40px;
   width: 70vmax;
   border-radius: 50px;
-  background-image: url(assets/div_background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: var(--div-bg-color);
 }
 
 .developer-photo {
@@ -117,21 +138,21 @@
 
 .developer-left {
   text-align: center;
-  color: red;
+  color: var(--text-color);
 }
 
 .developer-right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: rgb(202, 0, 0);
+  color: var(--text-color);
 }
 
 .more {
   text-align: center;
   border-radius: 5px;
   border: none;
-  color: white;
+  color: var(--text-color);
   padding: 10px 50px;
   margin-top: 25px;
   background-color: rgba(0, 0, 0, 0);
@@ -148,10 +169,7 @@
   gap: 40px;
   padding: 40px;
   border-radius: 20px;
-  background-image: url(assets/div_background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: var(--div-bg-color);
   width: 70vmax;
   margin-bottom: 2%;
 }
@@ -163,22 +181,19 @@
   gap: 40px;
   padding: 40px;
   border-radius: 50px;
-  background-image: url(assets/div_background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: var(--div-bg-color);
   flex-direction: column;
   width: 70vmax;
 }
 
 .resource-link-top {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 18px;
   background-color: rgba(255, 0, 0, 0.25);
   border-radius: 5px;
   margin-bottom: 20px;
-  padding: 5px 5px
+  padding: 5px 5px;
 }
 
 .resource-link-top:hover {
@@ -193,12 +208,12 @@
 }
 
 .resource-link-bottom {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
   font-size: 18px;
   background-color: rgba(255, 0, 0, 0.25);
   border-radius: 5px;
-  padding: 5px 5px
+  padding: 5px 5px;
 }
 
 .resource-link-bottom:hover {
