@@ -1,13 +1,13 @@
-const toggleBtn = document.getElementById("theme-toggle");
-const currentTheme = localStorage.getItem("theme") || "dark"; 
+const toggleSwitch = document.getElementById("theme-toggle");
+const currentTheme = localStorage.getItem("theme") || "light";
 
 document.documentElement.setAttribute("data-theme", currentTheme);
+toggleSwitch.checked = currentTheme === "dark";
 
-toggleBtn.addEventListener("click", () => {
-    const theme = document.documentElement.getAttribute("data-theme");
-    const newTheme = theme === "dark" ? "light" : "dark";
-    document.documentElement.setAttribute("data-theme", newTheme);
-    localStorage.setItem("theme", newTheme); // remember choice
+toggleSwitch.addEventListener("change", () => {
+  const newTheme = toggleSwitch.checked ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
 });
 
 function readMore() {
