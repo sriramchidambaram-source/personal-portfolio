@@ -297,6 +297,10 @@
         opacity: 1;
         transform: none;
       }
+
+      .skill-bar-fill {
+        transition: none;
+      }
     }
 
     /* Academics & Olympiads */
@@ -355,6 +359,111 @@
       font-size: 0.8rem;
       padding: 0.25rem 0.75rem;
       border-radius: 6px;
+    }
+
+    /* Knowledge Section */
+    .knowledge-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-row {
+      margin-bottom: 1.25rem;
+    }
+
+    .skill-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-row-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
+    }
+
+    .skill-row-label span:first-child {
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .skill-row-label span:last-child {
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .skill-bar-track {
+      width: 100%;
+      height: 10px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-color);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .skill-bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue));
+      width: 0%;
+      transition: width 1s ease;
+    }
+
+    .skill-bar-fill.lang {
+      background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+    }
+
+    .book-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .book-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding-bottom: 0.9rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .book-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .book-title {
+      font-size: 0.95rem;
+      color: var(--text-main);
+    }
+
+    .book-status {
+      flex-shrink: 0;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 0.25rem 0.7rem;
+      border-radius: 6px;
+      white-space: nowrap;
+    }
+
+    .book-status.finished {
+      color: var(--accent-green);
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .book-status.reading {
+      color: var(--accent-cyan);
+      background: rgba(6, 182, 212, 0.1);
+      border: 1px solid rgba(6, 182, 212, 0.3);
     }
 
     /* Speed Cubing Section */
@@ -513,6 +622,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#academics">Math &amp; Logic</a></li>
       <li><a href="#projects">Robotics &amp; STEM</a></li>
+      <li><a href="#knowledge">Knowledge</a></li>
       <li><a href="#cubing">Speed Cubing</a></li>
     </ul>
   </nav>
@@ -614,6 +724,94 @@
       </div>
     </section>
 
+    <!-- Knowledge Section -->
+    <section id="knowledge" aria-labelledby="knowledge-heading">
+      <div class="section-header">
+        <h2 id="knowledge-heading">Knowledge</h2>
+        <p>Subjects, languages, and books explored so far</p>
+      </div>
+
+      <div class="knowledge-grid">
+        <div class="card reveal">
+          <h3 style="margin-bottom: 1.25rem;">Subjects &amp; Skills</h3>
+
+          <div class="skill-row">
+            <div class="skill-row-label"><span>Math</span><span>80%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-level="80" style="width:80%"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-row-label"><span>Science</span><span>75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-level="75" style="width:75%"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-row-label"><span>Arduino</span><span>75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-level="75" style="width:75%"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-row-label"><span>ESP32</span><span>85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-level="85" style="width:85%"></div></div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <h3 style="margin-bottom: 1.25rem;">Languages</h3>
+
+          <div class="skill-row">
+            <div class="skill-row-label"><span>English</span><span>Fluent</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill lang" data-level="85" style="width:85%"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-row-label"><span>Tamil</span><span>Native</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill lang" data-level="100" style="width:100%"></div></div>
+          </div>
+
+          <div class="skill-row">
+            <div class="skill-row-label"><span>Hindi</span><span>Fluent</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill lang" data-level="85" style="width:85%"></div></div>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <h3 style="margin-bottom: 1.25rem;">Books</h3>
+
+          <ul class="book-list">
+            <li class="book-item">
+              <span class="book-title">Percy Jackson and the Olympians</span>
+              <span class="book-status finished">Finished</span>
+            </li>
+            <li class="book-item">
+              <span class="book-title">Trials of Apollo: The Hidden Oracle</span>
+              <span class="book-status finished">Finished</span>
+            </li>
+            <li class="book-item">
+              <span class="book-title">Magnus Chase and the Sword of Summer</span>
+              <span class="book-status finished">Finished</span>
+            </li>
+            <li class="book-item">
+              <span class="book-title">Kane Chronicles: The Red Pyramid</span>
+              <span class="book-status finished">Finished</span>
+            </li>
+            <li class="book-item">
+              <span class="book-title">Kane Chronicles: The Throne of Fire</span>
+              <span class="book-status reading">Reading</span>
+            </li>
+            <li class="book-item">
+              <span class="book-title">Sherlock Holmes: The Complete Collection</span>
+              <span class="book-status reading">Reading</span>
+            </li>
+            <li class="book-item">
+              <span class="book-title">Harry Potter (Books 1–6)</span>
+              <span class="book-status finished">Finished</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <!-- Speed Cubing Section -->
     <section id="cubing" aria-labelledby="cubing-heading">
       <div class="section-header">
@@ -667,6 +865,13 @@
         });
       });
 
+      // Fill skill bars to their target width
+      function fillSkillBars(scope) {
+        scope.querySelectorAll('.skill-bar-fill').forEach(function (bar) {
+          bar.style.width = bar.getAttribute('data-level') + '%';
+        });
+      }
+
       // Scroll-reveal for cards
       var revealEls = document.querySelectorAll('.reveal');
       if ('IntersectionObserver' in window) {
@@ -674,6 +879,7 @@
           entries.forEach(function (entry) {
             if (entry.isIntersecting) {
               entry.target.classList.add('is-visible');
+              fillSkillBars(entry.target);
               io.unobserve(entry.target);
             }
           });
@@ -681,6 +887,7 @@
         revealEls.forEach(function (el) { io.observe(el); });
       } else {
         revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+        fillSkillBars(document);
       }
 
       // Active nav link on scroll
