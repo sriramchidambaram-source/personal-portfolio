@@ -1,0 +1,16 @@
+# Sriram Chidambaram Adaikkappan
+
+> Personal portfolio site. Covers Math Olympiad results, robotics and STEM projects, general knowledge (subjects, languages, books), and speed cubing stats.
+
+## Sections
+
+- [About](https://sriramc.is-a.dev/#about): Introduction.
+- [Math & Logical Reasoning](https://sriramc.is-a.dev/#academics): National and international Olympiad rankings and awards.
+- [Robotics & Hardware Innovations](https://sriramc.is-a.dev/#projects): Robotics and STEM hardware projects, including a humanoid robot and a TDS water-quality meter.
+- [Knowledge](https://sriramc.is-a.dev/#knowledge): Subjects and skills, languages spoken, and books read or in progress.
+- [Speed Cubing Metrics](https://sriramc.is-a.dev/#cubing): 3x3x3 speedcubing personal best and average.
+
+## Notes
+
+- Single-page static site, no separate pages or API.
+- Source: https://github.com/sriramchidambaram-source/personal-portfolio
